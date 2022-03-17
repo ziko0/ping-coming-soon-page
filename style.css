@@ -141,6 +141,7 @@ footer{
     /* padding: 10px; */
     margin-left: 0.5rem;
     display: block;
+    color: var(--primary-blue);
 }
 
 .fa-brands{
