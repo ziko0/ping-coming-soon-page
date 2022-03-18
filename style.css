@@ -115,7 +115,7 @@ main{
 }
 
 .image{
-    width: 30rem;
+    max-width: 50rem;
     height: 100%;
 }
 
@@ -130,41 +130,44 @@ footer{
 
 .social{
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
 .soc-item{
-    /* border: 1px solid var(--primary-blue); */
-    width: 100%;
-    height: 100%;
-    /* border-radius: 100%; */
-    /* padding: 10px; */
-    margin-left: 0.5rem;
-    display: block;
+    border: 1px solid var(--pale-blue);
+    width: 3rem;
+    height: 3rem;
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 50px;
     color: var(--primary-blue);
 }
 
-.fa-brands{
-    border: 1px solid var(--pale-blue);
-    border-radius: 50px;
-    display: block;
-    padding: 5px 10px;
-}
 
 .soc-item:hover{
     color: #fff;
-    background-color: var(--pale-blue);
-    border-radius: 5px 10px;
-}
-
-@media (max-width: 375px){
-    img{
-        width: 10px;
-        height: 100px;
-    }
+    background-color: var(--primary-blue);
+    border: none;
 }
 
 /* attribution */
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 375px) {
+   .notify{
+       margin-top: 1rem ;
+   }
+
+   main{
+       width: 350px;
+       height: 350px;
+   }
+
+   img{
+       width: 100%;
+       object-fit: cover;
+   }
+}

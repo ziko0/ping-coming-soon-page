@@ -10,7 +10,7 @@ const validateEmail= (email) => {
 button.addEventListener('click',()=>{
     if(validateEmail(email.value)){
         text.innerHTML = 'Subscribed!';
-        text.style = 'color: green; font-size: 18px font-family: Libre Franklin';
+        text.style = 'color: green; font-size: 18px; font-family: Libre Franklin; border-color: green';
     }else{
       email.style = 'border-color: red';
       text.style = 'color: red; margin-right: 19rem; font-size: 11px ' ; 
